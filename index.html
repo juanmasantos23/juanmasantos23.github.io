@@ -7,8 +7,8 @@
 
     <style>
         :root {
-            --bg: #0f172a;
-            --card: #111827;
+            --bg: #020617;
+            --card: #0f172a;
             --text: #e5e7eb;
             --muted: #9ca3af;
             --accent: #38bdf8;
@@ -21,7 +21,7 @@
 
         body {
             margin: 0;
-            background: linear-gradient(120deg, #020617, #020617);
+            background: var(--bg);
             color: var(--text);
         }
 
@@ -37,8 +37,8 @@
 
         header p {
             color: var(--muted);
-            font-size: 1.1rem;
             margin-top: .5rem;
+            font-size: 1.1rem;
         }
 
         .links {
@@ -53,7 +53,7 @@
             text-decoration: none;
             color: var(--accent);
             border: 1px solid var(--accent);
-            transition: all .2s ease;
+            transition: .2s;
         }
 
         .links a:hover {
@@ -72,13 +72,17 @@
             border-radius: 1rem;
             padding: 2rem;
             margin-bottom: 1.5rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,.3);
+            box-shadow: 0 10px 25px rgba(0,0,0,.35);
         }
 
-        section h2 {
+        h2 {
             margin-top: 0;
             color: var(--accent);
-            font-size: 1.3rem;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            margin-bottom: .3rem;
         }
 
         ul {
@@ -86,7 +90,12 @@
         }
 
         li {
-            margin-bottom: .5rem;
+            margin-bottom: .4rem;
+        }
+
+        .muted {
+            color: var(--muted);
+            font-size: .95rem;
         }
 
         footer {
@@ -108,50 +117,119 @@
 
 <header>
     <h1>Juan Santos</h1>
-    <p>Soporte Técnico · Desarrollo · Infraestructura · Networking</p>
+    <p>Auxiliar Técnico · Redes · Infraestructura · Sistemas</p>
 
     <div class="links">
+        <a href="https://www.linkedin.com/in/juan-santos19610a199/" target="_blank">LinkedIn</a>
         <a href="https://github.com/TU_USUARIO" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/TU_USUARIO" target="_blank">LinkedIn</a>
     </div>
 </header>
 
 <main>
 
     <section>
-        <h2>Perfil</h2>
+        <h2>Perfil Profesional</h2>
         <p>
-            Profesional técnico con experiencia en soporte, infraestructura,
-            desarrollo y redes. Enfoque en sistemas Linux, virtualización,
-            automatización y soluciones escalables.
+            Me considero una persona responsable y ordenada, con interés en continuar
+            adquiriendo conocimiento y experiencia en el ámbito laboral mientras
+            prosigo con mis estudios en ingeniería.
         </p>
     </section>
 
     <section>
-        <h2>Experiencia</h2>
+        <h2>Formación Académica</h2>
+
+        <h3>Ingeniería en Sistemas (Estudiante)</h3>
+        <p class="muted">Facultad de Ingeniería – UdelaR</p>
+        <p>Cursando tercer semestre</p>
+
+        <br>
+
+        <h3>Tecnólogo Informático</h3>
+        <p class="muted">UTU – Bachiller Tecnológico de Informática</p>
+        <p>Egresado: 2018</p>
+    </section>
+
+    <section>
+        <h2>Experiencia Laboral</h2>
+
+        <h3>ABITAB – Auxiliar Técnico</h3>
+        <p class="muted">Abril 2024 – Actualidad</p>
+
         <ul>
-            <li><strong>Soporte Técnico de Producción</strong> – Abitab S.A.</li>
-            <li>Administración de sistemas y resolución de incidentes críticos</li>
-            <li>Soporte a entornos productivos y redes</li>
+            <li>Monitoreo de sistemas</li>
+            <li>Análisis de logs</li>
+            <li>Consultas a bases de datos</li>
+            <li>Configuración de software</li>
+            <li>Manejo de información sensible</li>
+            <li>Atención a consultas de sistemas y comunicaciones</li>
+            <li>Resolución de tickets</li>
+        </ul>
+
+        <p class="muted">
+            Referencia: Franco Ferrer – Coordinador (095 293 162)
+        </p>
+
+        <hr style="border-color:#1e293b">
+
+        <h3>Tier 1 Specialist</h3>
+
+        <ul>
+            <li><strong>Monitoreo:</strong>
+                <ul>
+                    <li>Zabbix: análisis de triggers, falsos positivos, resolución o escalamiento</li>
+                    <li>Grafana: latencias, tráfico, ancho de banda e intermitencias</li>
+                </ul>
+            </li>
+
+            <li><strong>Help Desk:</strong>
+                <ul>
+                    <li>Configuración de impresoras en distintas soluciones</li>
+                    <li>Configuración inicial de nuevos equipos</li>
+                </ul>
+            </li>
+
+            <li><strong>Azure:</strong>
+                <ul>
+                    <li>Administrador multitenant</li>
+                    <li>Active Directory</li>
+                </ul>
+            </li>
+
+            <li><strong>Redes e Infraestructura:</strong>
+                <ul>
+                    <li>Análisis, relevamiento y mantenimiento de infraestructura</li>
+                    <li>Configuración de dispositivos multivendor (Cisco, Nokia)</li>
+                    <li>Red MPLS: VPRN y VPLS en equipos Nokia</li>
+                    <li>Core Cisco Nexus 7000 – servicios capa 2 y 3</li>
+                    <li>Configuración de Access Points en controladoras Cisco (virtual y física)</li>
+                </ul>
+            </li>
+
+            <li><strong>Seguridad:</strong>
+                <ul>
+                    <li>Fortinet – manejo de VDOMs</li>
+                </ul>
+            </li>
+
+            <li>Gestión de servicios de clientes y troubleshooting</li>
         </ul>
     </section>
 
     <section>
-        <h2>Habilidades Técnicas</h2>
+        <h2>Idiomas</h2>
         <ul>
-            <li>Linux, Bash, Networking</li>
-            <li>Docker, Kubernetes, Virtualización</li>
-            <li>HTML, CSS, JavaScript, React</li>
-            <li>Python, C, sistemas de bajo nivel</li>
-            <li>Cloud, VPS, VPN, seguridad</li>
+            <li>Inglés – Nivel avanzado</li>
+            <li>First Certificate Exam – Instituto Dickens (2018)</li>
         </ul>
     </section>
 
     <section>
-        <h2>Educación / Formación</h2>
+        <h2>Información Personal</h2>
         <ul>
-            <li>Formación autodidacta en sistemas, desarrollo y DevOps</li>
-            <li>Estudios técnicos y universitarios en curso</li>
+            <li>Nacionalidad: Uruguayo</li>
+            <li>Residencia: Montevideo</li>
+            <li>Fecha de nacimiento: 02/05/1999</li>
         </ul>
     </section>
 
